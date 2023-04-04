@@ -1,9 +1,11 @@
 # EZARR
-[![Check running](https://github.com/Luctia/ezarr/actions/workflows/check_running.yml/badge.svg)](https://github.com/Luctia/ezarr/actions/workflows/check_running.yml)
+My configuration of the [Ezarr](https://github.com/Luctia/ezarr/) branch
+
 
 Ezarr is a project built to make it EZ to deploy a Servarr mediacenter on an Ubuntu server. The
 badge above means that the shell script and docker-compose file in this repository at least *don't
 crash*. It doesn't necessarily mean it will run well on your system ;) It features:
+- [Gluetun](https://github.com/qdm12/gluetun) is a vpn vlient to multiple OpenVPN service providers
 - [Sonarr](https://sonarr.tv/) is an application to manage TV shows. It is capable of keeping track
   of what you'd like to watch, at what quality, in which language and more, and can find a place to
   download this if connected to Prowlarr and qBittorrent. It can also reorganize the media you
@@ -21,14 +23,8 @@ crash*. It doesn't necessarily mean it will run well on your system ;) It featur
   where to download this. **Note**: when adding an indexer, please do not set the "seed ratio" to
   less than 1. Less than 1 means that you upload less than you download. Not only is this
   unfriendly towards your fellow users, but it can also get you banned from certain indexers.
-- [Jackett](https://github.com/Jackett/Jackett) is an alternative to Prowlarr. 
 - [qBittorrent](https://www.qbittorrent.org/) can download torrents and provides a bunch more
   features for management.
-- [PleX](https://www.plex.tv/) is a mediaserver. Using this, you get access to a Netflix-like
-  interface across many devices like your laptop or computer, your phone, your TV and more. For
-  some features, you need a [PleX pass](https://www.plex.tv/nl/plex-pass/).
-- [Tautulli](https://tautulli.com/) is a monitoring application for PleX  which can keep track of
-  what has been watched, who watched it, when and where they watched it, and how it was watched.
 - [Jellyfin](https://jellyfin.org/) is an alternative for PleX. Which you'd like to use is a matter
   of preference, and you *could* even use both, although this is probably a waste of resources.
 
